@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지원 - 영어 단어장 앱 Minda</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-color: #2b7de9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+        }
+
+        /* ページ全体 */
+        .page-wrapper {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 中央の白レイヤー */
+        .middle-white-layer {
+            width: 100%;
+            max-width: 960px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* 赤レイヤー */
+        .red-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ef4444;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 16px 40px 16px;
+            box-sizing: border-box;
+            flex-grow: 1;
+            min-height: 100vh;
+        }
+
+        /* 上部タイトル */
+        .top-title {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 15px 0 25px 0;
+            letter-spacing: 1px;
+        }
+
+        /* 白い本文カード */
+        .white-card {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border: 3px solid #000000;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* メイン見出し */
+        h1 {
+            font-size: 22px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* セクション見出し */
+        h2 {
+            font-size: 16px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 4px solid #2b7de9;
+        }
+
+        /* 本文 */
+        p, li {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        /* リスト */
+        ul {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* メールアドレス */
+        .email {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: bold;
+            color: #2b7de9;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        /* 開発者情報 */
+        .app-info {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin-top: 15px;
+        }
+
+        .app-info p {
+            margin: 4px 0;
+        }
+
+        /* プライバシーポリシー */
+        .privacy-link {
+            display: inline-block;
+            margin-top: 5px;
+            color: #2b7de9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .privacy-link:hover {
+            text-decoration: underline;
+        }
+
+        /* 注意書き */
+        .notice {
+            margin-top: 35px;
+            padding: 15px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+        }
+
+        /* フッター */
+        .footer {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* モバイル対応 */
+        @media (max-width: 600px) {
+
+            .red-container {
+                padding: 20px 8px 30px 8px;
+            }
+
+            .white-card {
+                padding: 20px 16px;
+                border-width: 2px;
+                border-radius: 12px;
+            }
+
+            .top-title {
+                font-size: 26px;
+                margin: 10px 0 15px 0;
+            }
+
+            h1 {
+                font-size: 20px;
+                padding-bottom: 12px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 15px;
+                margin-top: 30px;
+            }
+
+            p, li {
+                font-size: 14px;
+            }
+
+            .email {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- 中央の白レイヤー -->
+        <div class="middle-white-layer">
+
+            <!-- 赤レイヤー -->
+            <div class="red-container">
+
+                <!-- 上部タイトル -->
+                <div class="top-title">Minda</div>
+
+                <!-- 黒枠白カード -->
+                <div class="white-card">
+
+                    <h1>Minda 지원</h1>
+
+                    <!-- お問い合わせ -->
+                    <h2>문의하기</h2>
+
+                    <p>
+                        Minda를 이용해 주셔서 감사합니다.<br>
+                        앱에 관한 질문, 오류 신고, 의견 및 요청 사항이 있으시면
+                        아래 이메일 주소로 문의해 주세요.
+                    </p>
+
+                    <h2>이메일 주소</h2>
+
+                    <p>
+                        <a class="email"
+                           href="mailto:aizawa104ko1@gmail.com">
+                            aizawa104ko1@gmail.com
+                        </a>
+                    </p>
+
+                    <div class="app-info">
+                        <p><strong>개발자:</strong> 相沢幸一</p>
+                        <p><strong>앱 이름:</strong> Minda</p>
+                    </div>
+
+
+                    <!-- お問い合わせの際のお願い -->
+                    <h2>문의 시 부탁드리는 사항</h2>
+
+                    <p>
+                        오류에 대해 문의하실 경우
+                        가능한 범위에서 다음 정보를 알려주세요.
+                    </p>
+
+                    <ul>
+                        <li>발생한 문제의 내용</li>
+                        <li>문제가 발생한 작업이나 절차</li>
+                        <li>사용 중인 iPhone 또는 iPad 모델</li>
+                        <li>iOS 또는 iPadOS 버전</li>
+                        <li>Minda 버전</li>
+                    </ul>
+
+                    <p>
+                        제공해 주신 정보는 문제 확인 및 지원을 위해 사용됩니다.
+                    </p>
+
+
+                    <!-- ご意見・ご要望 -->
+                    <h2>의견 및 요청 사항</h2>
+
+                    <p>
+                        Minda의 기능에 대한 의견이나 새로운 기능에 대한 요청도
+                        위 이메일 주소로 보내실 수 있습니다.
+                    </p>
+
+                    <p>
+                        향후 앱 개선을 위한 참고 자료로 활용하겠습니다.
+                    </p>
+
+
+                    <!-- アプリについて -->
+                    <h2>앱 소개</h2>
+
+                    <p>
+                        Minda는 영어 단어와 관련 단어를 함께 학습할 수 있는
+                        영어 단어장 앱입니다.
+                    </p>
+
+                    <p>
+                        어족·유의어·반의어 등의 관련 정보를 활용하여
+                        영어 단어를 더욱 효율적으로 학습할 수 있도록 설계되었습니다.
+                    </p>
+
+
+                    <!-- プライバシーポリシー -->
+                    <h2>개인정보 처리방침</h2>
+
+                    <p>
+                        Minda의 개인정보 및 데이터 처리에 관한 자세한 내용은
+                        아래 개인정보 처리방침을 확인해 주세요.
+                    </p>
+
+                    <p>
+                        <a class="privacy-link"
+                           href="https://aizawa104ko1.github.io/privacy_ko.html"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            プライバシーポリシー
+                        </a>
+                    </p>
+
+
+                    <!-- ご注意 -->
+                    <div class="notice">
+
+                        <h2 style="margin-top: 0;">주의사항</h2>
+
+                        <p>
+                            문의 내용에 따라 답변까지 시간이 걸릴 수 있습니다.
+                            또한 모든 요청에 대응할 수 있는 것은 아니므로
+                            미리 양해해 주시기 바랍니다.
+                        </p>
+
+                    </div>
+
+
+                    <!-- フッター -->
+                    <div class="footer">
+                        © 2026 相沢幸一<br>
+                        Minda
+                    </div>
+
+                </div>
+                <!-- /white-card -->
+
+            </div>
+            <!-- /red-container -->
+
+        </div>
+        <!-- /middle-white-layer -->
+
+    </div>
+    <!-- /page-wrapper -->
+
+</body>
+</html>

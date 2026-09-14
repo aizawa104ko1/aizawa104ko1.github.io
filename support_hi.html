@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सहायता - Minda अंग्रेज़ी शब्दावली ऐप</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-color: #2b7de9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+        }
+
+        /* ページ全体 */
+        .page-wrapper {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 中央の白レイヤー */
+        .middle-white-layer {
+            width: 100%;
+            max-width: 960px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* 赤レイヤー */
+        .red-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ef4444;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 16px 40px 16px;
+            box-sizing: border-box;
+            flex-grow: 1;
+            min-height: 100vh;
+        }
+
+        /* 上部タイトル */
+        .top-title {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 15px 0 25px 0;
+            letter-spacing: 1px;
+        }
+
+        /* 白い本文カード */
+        .white-card {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border: 3px solid #000000;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* メイン見出し */
+        h1 {
+            font-size: 22px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* セクション見出し */
+        h2 {
+            font-size: 16px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-left: 4px solid #2b7de9;
+        }
+
+        /* 本文 */
+        p, li {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        /* リスト */
+        ul {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* メールアドレス */
+        .email {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: bold;
+            color: #2b7de9;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        /* 開発者情報 */
+        .app-info {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin-top: 15px;
+        }
+
+        .app-info p {
+            margin: 4px 0;
+        }
+
+        /* プライバシーポリシー */
+        .privacy-link {
+            display: inline-block;
+            margin-top: 5px;
+            color: #2b7de9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .privacy-link:hover {
+            text-decoration: underline;
+        }
+
+        /* 注意書き */
+        .notice {
+            margin-top: 35px;
+            padding: 15px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+        }
+
+        /* フッター */
+        .footer {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* モバイル対応 */
+        @media (max-width: 600px) {
+
+            .red-container {
+                padding: 20px 8px 30px 8px;
+            }
+
+            .white-card {
+                padding: 20px 16px;
+                border-width: 2px;
+                border-radius: 12px;
+            }
+
+            .top-title {
+                font-size: 26px;
+                margin: 10px 0 15px 0;
+            }
+
+            h1 {
+                font-size: 20px;
+                padding-bottom: 12px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 15px;
+                margin-top: 30px;
+            }
+
+            p, li {
+                font-size: 14px;
+            }
+
+            .email {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- बीच की सफेद परत -->
+        <div class="middle-white-layer">
+
+            <!-- लाल परत -->
+            <div class="red-container">
+
+                <!-- शीर्षक -->
+                <div class="top-title">Minda</div>
+
+                <!-- काले बॉर्डर वाला सफेद कार्ड -->
+                <div class="white-card">
+
+                    <h1>Minda सहायता</h1>
+
+                    <!-- お問い合わせ -->
+                    <h2>संपर्क करें</h2>
+
+                    <p>
+                        Minda का उपयोग करने के लिए धन्यवाद।<br>
+                        यदि आपके पास ऐप के बारे में कोई प्रश्न है, किसी समस्या की रिपोर्ट करनी है, या कोई सुझाव या अनुरोध है,
+                        तो कृपया नीचे दिए गए ईमेल पते पर हमसे संपर्क करें।
+                    </p>
+
+                    <h2>ईमेल पता</h2>
+
+                    <p>
+                        <a class="email"
+                           href="mailto:aizawa104ko1@gmail.com">
+                            aizawa104ko1@gmail.com
+                        </a>
+                    </p>
+
+                    <div class="app-info">
+                        <p><strong>डेवलपर:</strong> 相沢幸一</p>
+                        <p><strong>ऐप का नाम:</strong> Minda</p>
+                    </div>
+
+
+                    <!-- お問い合わせの際のお願い -->
+                    <h2>संपर्क करते समय अनुरोध</h2>
+
+                    <p>
+                        यदि आप किसी समस्या के बारे में संपर्क कर रहे हैं,
+                        तो कृपया संभव हो तो निम्नलिखित जानकारी दें।
+                    </p>
+
+                    <ul>
+                        <li>समस्या का विवरण</li>
+                        <li>समस्या उत्पन्न होने वाली प्रक्रिया या चरण</li>
+                        <li>आपके द्वारा उपयोग किए जा रहे iPhone या iPad का मॉडल</li>
+                        <li>iOS या iPadOS का संस्करण</li>
+                        <li>Minda का संस्करण</li>
+                    </ul>
+
+                    <p>
+                        प्रदान की गई जानकारी का उपयोग समस्या की जाँच और सहायता प्रदान करने के लिए किया जाएगा।
+                    </p>
+
+
+                    <!-- ご意見・ご要望 -->
+                    <h2>राय और सुझाव</h2>
+
+                    <p>
+                        आप Minda के फीचर्स के बारे में अपनी राय या नए फीचर्स के लिए अनुरोध भी
+                        ऊपर दिए गए ईमेल पते पर भेज सकते हैं।
+                    </p>
+
+                    <p>
+                        आपकी राय का उपयोग भविष्य में ऐप को बेहतर बनाने के लिए किया जाएगा।
+                    </p>
+
+
+                    <!-- アプリについて -->
+                    <h2>ऐप के बारे में</h2>
+
+                    <p>
+                        Minda एक अंग्रेज़ी शब्दावली ऐप है, जिसमें आप अंग्रेज़ी शब्दों और उनसे संबंधित शब्दों को साथ में सीख सकते हैं।
+                        
+                    </p>
+
+                    <p>
+                        यह शब्द परिवार, समानार्थी शब्द और विलोम शब्द जैसी संबंधित जानकारी का उपयोग करके
+                        अंग्रेज़ी शब्दों को अधिक प्रभावी ढंग से सीखने के लिए डिज़ाइन किया गया है।
+                    </p>
+
+
+                    <!-- गोपनीयता नीति -->
+                    <h2>गोपनीयता नीति</h2>
+
+                    <p>
+                        Minda में व्यक्तिगत जानकारी और डेटा के प्रबंधन के बारे में जानकारी के लिए
+                        नीचे दी गई गोपनीयता नीति देखें।
+                    </p>
+
+                    <p>
+                        <a class="privacy-link"
+                           href="https://aizawa104ko1.github.io/privacy_hi.html"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            プライバシーポリシー
+                        </a>
+                    </p>
+
+
+                    <!-- ご注意 -->
+                    <div class="notice">
+
+                        <h2 style="margin-top: 0;">सूचना</h2>
+
+                        <p>
+                            आपके संपर्क की विषय-वस्तु के आधार पर, उत्तर देने में कुछ समय लग सकता है।
+                            साथ ही, हम हर अनुरोध को पूरा करने में सक्षम हों, यह आवश्यक नहीं है,
+                            कृपया इसे पहले से समझें।
+                        </p>
+
+                    </div>
+
+
+                    <!-- पाद लेख -->
+                    <div class="footer">
+                        © 2026 相沢幸一<br>
+                        Minda
+                    </div>
+
+                </div>
+                <!-- /white-card -->
+
+            </div>
+            <!-- /red-container -->
+
+        </div>
+        <!-- /middle-white-layer -->
+
+    </div>
+    <!-- /page-wrapper -->
+
+</body>
+</html>
